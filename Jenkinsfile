@@ -23,6 +23,6 @@ node("master"){
     stage("hygieia"){
         hygieiaBuildPublishStep buildStatus: 'Success'
         hygieiaArtifactPublishStep artifactDirectory: 'target', artifactGroup: 'com.syna.ci', artifactName: 'springboot-demo*.jar', artifactVersion: ''
-        hygieiaDeployPublishStep applicationName: 'SpringBoot', artifactDirectory: 'target', artifactGroup: 'com.syna.ci', artifactName: 'springboot-demo*.jar', artifactVersion: '', buildStatus: 'Success', environmentName: 'Dev'
+        hygieiaDeployPublishStep applicationName: 'SpringBoot', artifactDirectory: 'target', artifactGroup: 'com.syna.ci', artifactName: 'springboot-demo*.jar', artifactVersion: '', buildStatus: 'Success', environmentName: 'Jenkinsfile'
     }
 }
